@@ -11,9 +11,10 @@ function findUserEntry(){
     //  convert the string to an int
     var height = parseInt(heightStr);
 
+    //find what user clicked for symbol. indexes options of the select input
     var symbolElem = symbolSelect.options[symbolSelect.selectedIndex].value;
-  
 
+    //calls drawPyramid with newly aquired variables
     drawPyramid(height, symbolElem);
 
 }
